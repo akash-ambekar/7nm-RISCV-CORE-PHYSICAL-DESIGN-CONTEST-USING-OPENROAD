@@ -48,8 +48,11 @@ In this contest, we have provided with a verilog code for RISC-V processor core 
 
 The initial design constraints are given as follows :
 
-              ⇒   Minimum Clock Period      :
-              ⇒   Maximum Clock Frequency   :
-              ⇒   Core Utilization          :
-              ⇒   Design Area               :
-              ⇒   Power                     :
+              ⇒   Minimum Clock Period      :   1760 ns
+              ⇒   Maximum Clock Frequency   :   568.18 MHz
+              ⇒   Core Utilization          :   45%
+              ⇒   Design Area               :   2490 u^2
+              ⇒   Power                     :   12.1 mW
+              
+              
+# Proposed Mrthods to Improve fmax 
