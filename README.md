@@ -71,10 +71,30 @@ As clock period is proportional to 1/fmax, reducing the clock frequency will res
 
 # 2) Improving Core Utilization
 
-Core utilization indicates the amount of core area used for cell placement. While improving the core utilization we have taken care that, high core utilization must not create NP routing difficulty. Hence, we tune the core utilization within the range of 40 to 60 and iterated the design to get best results.
+File Location : ./flow/designs/asap7/ibex/config.mk
+
+Core utilization indicates the amount of core area used for cell placement (in %). While improving the core utilization we have taken care that, high core utilization must not create NP routing difficulty. Hence, we tune the core utilization within the range of 40 to 60 and iterated the design to get best results.
 
 # 3) Replacing RVT Cells by LVT Cell & using FF Library
 
-During synthesis, we are provided with various options to use Slow-Slow/Fast-Fast library & RVT/LVT/SLVT library cells. Considering improving fmax as utmost goal, we used FF library & replaced all RVT cells by LVT cells. LVT cells have lower threshold voltage which results into high current comparing with RVT cells having high threshold. Dur to large current, faster switching will be achieved which results into improvement of fmax.
+File Location : ./flow/designs/asap7/ibex/config.mk
+
+During synthesis, we are provided with various options to use Slow-Slow/Fast-Fast library & RVT/LVT/SLVT library cells. Considering improving fmax as utmost goal, we used FF library & replaced all RVT cells by LVT cells. LVT cells have lower threshold voltage which results into high current comparing with RVT cells having high threshold. Dur to large current, faster switching will be achieved which results into improvement of fmax. No doubt LVT cells may cause higher leakage power than RVT but no significant changes in power has been observed after replacement.
 
 ![image](https://user-images.githubusercontent.com/100372947/228182826-bb63eb6e-742d-4b11-a2bb-d10cee2d064f.png)
+
+# 4) Modification of Supply Voltage
+
+File Location : ./flow/designs/asap7/ibex/config.mk
+
+The supply voltage is provied in 3 formats namely Best, Typical & Worst. Initially it was 0.77/0.7/0.63 V i.e. +-10% tolerance band. But if we increase the supply voltage, drain current will rise and results in faster switching which ultimately improve fmax. Considering this, we 
+# 5) Modification of RC Parasitics File
+
+# 6) Increasing Metal Layer for Routing
+
+File Location : ./flow/designs/asap7/ibex/config.mk
+
+In initial config file, the max metal layer for routing is set to M7 where as upto M9 layers are provided in the PDK. So, increasing metal layers reduces the routing congestions.
+
+![image](https://user-images.githubusercontent.com/100372947/228185474-b25bd738-67bd-4fc0-b3cc-9a09d16e6ff0.png)
+
