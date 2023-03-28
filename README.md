@@ -84,7 +84,7 @@ Core utilization indicates the amount of core area used for cell placement (in %
 
 # 3) Replacing RVT Cells by LVT Cell & using FF Library
 
-File Location : ./flow/designs/asap7/ibex/config.mk
+File Location : ./flow/platforms/asap7/config.mk
 
 During synthesis, we are provided with various options to use Slow-Slow/Fast-Fast library & RVT/LVT/SLVT library cells. Considering improving fmax as utmost goal, we used FF library & replaced all RVT cells by LVT cells. LVT cells have lower threshold voltage which results into high current comparing with RVT cells having high threshold. Dur to large current, faster switching will be achieved which results into improvement of fmax. No doubt LVT cells may cause higher leakage power than RVT but no significant changes in power has been observed after replacement.
 
@@ -92,7 +92,7 @@ During synthesis, we are provided with various options to use Slow-Slow/Fast-Fas
 
 # 4) Modification of Supply Voltage
 
-File Location : ./flow/designs/asap7/ibex/config.mk
+File Location : ./flow/platforms/asap7/config.mk
 
 The supply voltage is provied in 3 formats namely Best, Typical & Worst. Initially it was 0.77/0.7/0.63 V i.e. +-10% tolerance band. But if we increase the supply voltage, drain current will rise and results in faster switching which ultimately improve fmax. Considering this, we increased value of supply voltage 1.3/1
 27/1.2 V (Best/Typical/Worst) and observed the improvements.
@@ -109,7 +109,7 @@ Parasitics are the components that degrade the performance of the design. Genera
 
 # 6) Increasing Metal Layer for Routing
 
-File Location : ./flow/designs/asap7/ibex/config.mk
+File Location : ./flow/platforms/asap7/config.mk
 
 In initial config file, the max metal layer for routing is set to M7 where as upto M9 layers are provided in the PDK. So, increasing metal layers reduces the routing congestions.
 
@@ -117,6 +117,12 @@ In initial config file, the max metal layer for routing is set to M7 where as up
 
 # 7) Modification in Placement Density
 
+File Location : ./flow/platforms/asap7/config.mk
+
 Placement density is the utilization of the cells in your design. In practical, the equation is the placement density should be less than 70%. so that remaining 30% can be utilized for routing. We have tuned the placement density in range of 50% to 65% and found best results at 55% placement density
 
-# 8) Modification in Clock Tree
+# 8) Modification in CTS Buffer Distance
+
+File Location : ./flow/platforms/asap7/config.mk
+
+While doing CTS, the tool periodically insert buffers to avoid degradation of signal but inserting multiple buffers at very small distances will result into unnecessary rise in overall latency. To avoid this, we finely tuned and increased the CTS Buffer Distance.
