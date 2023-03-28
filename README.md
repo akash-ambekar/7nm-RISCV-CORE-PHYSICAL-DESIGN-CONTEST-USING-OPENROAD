@@ -55,4 +55,13 @@ The initial design constraints are given as follows :
               ⇒   Power                     :   12.1 mW
               
               
-# Proposed Mrthods to Improve fmax 
+# Proposed Methods to Improve fmax 
+
+# 1) Modification in Clock Constraints 
+
+File Location : ./flow/designs/asap7/ibex/constraints.sdc
+
+As clock period is proportional to 1/fmax, reducing the clock frequency will result into enhanced fmax. But while doing so, one must take care that it should not cause any unrepairable setup violations when clock period is extreme reduced. We followed the step by step reduction and ended with best results at clock period = 850ps along with reducing clock to io delay to 0.01
+
+![image](https://user-images.githubusercontent.com/100372947/228129497-7155a193-8138-4710-934a-1cd5939894ea.png)
+
