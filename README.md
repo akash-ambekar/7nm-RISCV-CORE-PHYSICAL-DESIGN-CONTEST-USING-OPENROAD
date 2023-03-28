@@ -3,6 +3,27 @@ This repository gives brief review of PPA Improvement by Physical Design of RISC
 
 ![image](https://user-images.githubusercontent.com/100372947/228320761-19c35794-58bf-4d11-a124-4978eca0c164.png)
 
+# Contents
+
+- [OpenROAD EDA Tool](#openroad-eda-tool)
+- [Proposed Work & Initial Design Constraints](#proposed-work-&-initial-design-constraints)
+- [Reference Circuit Diagram](#reference-circuit-diagram)
+- [Circuit Details](#circuit-details)
+- [Resolution of ADC](#resolution-of-adc)
+- [Proposed Methodology](#proposed-methodology)
+- [EDA Tools Used](#eda-tools-used)
+- [Verilog Code](#verilog-code)
+- [Makerchip](#makerchip)
+- [Creating model of 8:3 Encoder using NgVeri](#creating-model-of-8-3-encoder-using-ngveri)
+- [Schematics](#schematics)
+- [Netlist](#netlist)
+- [Output Waveforms](#output-waveforms)
+- [GAW Waveforms](#gaw-waveforms)
+- [Author](#author)
+- [Acknowledgements](#acknowledgements)
+- [References](#references)
+
+
 # OpenROAD EDA Tool
 OpenROAD is an integrated chip physical design tool that takes a design from synthesized Verilog to routed layout.
 
