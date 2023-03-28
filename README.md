@@ -42,6 +42,8 @@ OpenROAD uses the OpenDB database and OpenSTA for static timing analysis.
 
 ORFS Documentation & Installation Guide : https://openroad.readthedocs.io/en/latest/main/README.html
 
+
+
 # Proposed Work & Initial Design Constraints
 
 In this contest, we have provided with a verilog code for RISC-V processor core (Code Link : https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/tree/master/flow/designs/src/ibex) and we are expected to run the RTLtoGDSII flow for given design and improve the PPA with respect to any one parameter. Considering the code, we have decided to improve the performance of the design by improving fmax of design.
@@ -53,6 +55,8 @@ The initial design constraints are given as follows :
               ⇒   Core Utilization          :   45%
               ⇒   Design Area               :   2490 u^2
               ⇒   Power                     :   12.1 mW
+              
+              
               
               
 # Proposed Methods to Improve fmax 
