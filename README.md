@@ -87,9 +87,12 @@ During synthesis, we are provided with various options to use Slow-Slow/Fast-Fas
 
 File Location : ./flow/designs/asap7/ibex/config.mk
 
-The supply voltage is provied in 3 formats namely Best, Typical & Worst. Initially it was 0.77/0.7/0.63 V i.e. +-10% tolerance band. But if we increase the supply voltage, drain current will rise and results in faster switching which ultimately improve fmax. Considering this, we 
+The supply voltage is provied in 3 formats namely Best, Typical & Worst. Initially it was 0.77/0.7/0.63 V i.e. +-10% tolerance band. But if we increase the supply voltage, drain current will rise and results in faster switching which ultimately improve fmax. Considering this, we increased value of supply voltage 1.3/1
+27/1.2 V (Best/Typical/Worst) and observed the improvements.
+
 # 5) Modification of RC Parasitics File
 
+File Location : ./
 # 6) Increasing Metal Layer for Routing
 
 File Location : ./flow/designs/asap7/ibex/config.mk
@@ -98,3 +101,4 @@ In initial config file, the max metal layer for routing is set to M7 where as up
 
 ![image](https://user-images.githubusercontent.com/100372947/228185474-b25bd738-67bd-4fc0-b3cc-9a09d16e6ff0.png)
 
+# 7) 
