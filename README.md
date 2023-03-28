@@ -61,6 +61,13 @@ The initial design constraints are given as follows :
               
 # Proposed Methods to Improve fmax 
 
+  1) Modification in Clock Constraints 
+  2) Improving Core Utilization\
+  3) Replacing RVT Cells by LVT Cell & using FF Library
+  4) Modification of Supply Voltage
+  5) Modification of RC Parasitics File
+  6) Increasing Metal Layer for Routing
+  
 # 1) Modification in Clock Constraints 
 
 File Location : ./flow/designs/asap7/ibex/constraints.sdc
@@ -92,7 +99,11 @@ The supply voltage is provied in 3 formats namely Best, Typical & Worst. Initial
 
 # 5) Modification of RC Parasitics File
 
-File Location : ./
+File Location : ./flow/platforms/asap7/setRC.tcl
+
+Parasitics are the components that degrade the performance of the design. Generally the metal resistances & stray capacitances are the most dominant causes for this RC parasitics drop which causes larger delay. In order to reduce this delay, we reduce the metal & via resistance along with metal capacitances.
+
+
 # 6) Increasing Metal Layer for Routing
 
 File Location : ./flow/designs/asap7/ibex/config.mk
