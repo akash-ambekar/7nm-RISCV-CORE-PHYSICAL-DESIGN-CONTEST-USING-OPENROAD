@@ -97,6 +97,9 @@ File Location : ./flow/designs/asap7/ibex/config.mk
 The supply voltage is provied in 3 formats namely Best, Typical & Worst. Initially it was 0.77/0.7/0.63 V i.e. +-10% tolerance band. But if we increase the supply voltage, drain current will rise and results in faster switching which ultimately improve fmax. Considering this, we increased value of supply voltage 1.3/1
 27/1.2 V (Best/Typical/Worst) and observed the improvements.
 
+![image](https://user-images.githubusercontent.com/100372947/228216576-5d552642-9aac-4635-9b4e-75b9836edfcd.png)
+
+
 # 5) Modification of RC Parasitics File
 
 File Location : ./flow/platforms/asap7/setRC.tcl
@@ -112,4 +115,8 @@ In initial config file, the max metal layer for routing is set to M7 where as up
 
 ![image](https://user-images.githubusercontent.com/100372947/228185474-b25bd738-67bd-4fc0-b3cc-9a09d16e6ff0.png)
 
-# 7) 
+# 7) Modification in Placement Density
+
+Placement density is the utilization of the cells in your design. In practical, the equation is the placement density should be less than 70%. so that remaining 30% can be utilized for routing. We have tuned the placement density in range of 50% to 65% and found best results at 55% placement density
+
+# 8) Modification in Clock Tree
