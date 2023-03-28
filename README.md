@@ -71,4 +71,10 @@ As clock period is proportional to 1/fmax, reducing the clock frequency will res
 
 # 2) Improving Core Utilization
 
-Core utilization indicates the amount of core area used for cell placement. While improving the core utilization we have taken care that, core utilization mus
+Core utilization indicates the amount of core area used for cell placement. While improving the core utilization we have taken care that, high core utilization must not create NP routing difficulty. Hence, we tune the core utilization within the range of 40 to 60 and iterated the design to get best results.
+
+# 3) Replacing RVT Cells by LVT Cell & using FF Library
+
+During synthesis, we are provided with various options to use Slow-Slow/Fast-Fast library & RVT/LVT/SLVT library cells. Considering improving fmax as utmost goal, we used FF library & replaced all RVT cells by LVT cells. LVT cells have lower threshold voltage which results into high current comparing with RVT cells having high threshold. Dur to large current, faster switching will be achieved which results into improvement of fmax.
+
+![image](https://user-images.githubusercontent.com/100372947/228182826-bb63eb6e-742d-4b11-a2bb-d10cee2d064f.png)
