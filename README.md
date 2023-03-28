@@ -1,5 +1,7 @@
 # 7nm-PHYSICAL-DESIGN-CONTEST-USING-OPENROAD
-This repository gives brief review of Physical Design of RISC-V processor core using 7nm ASAP7 PDK. For this contest, the verilog code is provided and using OpenRoad EDA tool, we have performed RTLtoGDSII flow and improved the design PPA (Power, Performance, Area)
+This repository gives brief review of PPA Improvement by Physical Design of RISC-V processor core using 7nm ASAP7 PDK. For this contest, the verilog code is provided and using OpenRoad EDA tool, we have performed RTLtoGDSII flow and improved the design PPA (Power, Performance, Area)
+
+![image](https://user-images.githubusercontent.com/100372947/228320761-19c35794-58bf-4d11-a124-4978eca0c164.png)
 
 # OpenROAD EDA Tool
 OpenROAD is an integrated chip physical design tool that takes a design from synthesized Verilog to routed layout.
@@ -143,4 +145,8 @@ As the OpenROAD tool itself iterate the design routing unless all DRC violations
 
 # Results & Design Achievements
 
+![image](https://user-images.githubusercontent.com/100372947/228320811-a0426bab-5ec5-4051-8ce8-c03e8b342289.png)
+
 ![image](https://user-images.githubusercontent.com/100372947/228317683-f4211932-5c46-4728-b044-ddfee0050a98.png)
+
+The biggest achievement of the design is to run the design at maximum operating frequency of 1.17GHz. Along with it, there is a slight improvement in design area along with core utilization. Due to trade off, we see the enhancement in power which can be reduced by further modifications.
