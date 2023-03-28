@@ -67,6 +67,8 @@ The initial design constraints are given as follows :
   4) Modification of Supply Voltage
   5) Modification of RC Parasitics File
   6) Increasing Metal Layer for Routing
+  7) Modification in Placement Density
+  8) Modification in CTS Buffer Distance
   
 # 1) Modification in Clock Constraints 
 
@@ -126,3 +128,11 @@ Placement density is the utilization of the cells in your design. In practical, 
 File Location : ./flow/platforms/asap7/config.mk
 
 While doing CTS, the tool periodically insert buffers to avoid degradation of signal but inserting multiple buffers at very small distances will result into unnecessary rise in overall latency. To avoid this, we finely tuned and increased the CTS Buffer Distance.
+
+# Final Layout
+
+![image](https://user-images.githubusercontent.com/100372947/228250952-3a71721b-d7d1-4e80-9312-049f152e24ec.png)
+
+# Clock Tree
+
+
