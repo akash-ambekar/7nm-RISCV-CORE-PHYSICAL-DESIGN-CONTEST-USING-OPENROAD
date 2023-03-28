@@ -52,7 +52,7 @@ In this contest, we have provided with a verilog code for RISC-V processor core 
 
 The initial design constraints are given as follows :
 
-              ⇒   Minimum Clock Period      :   1760 ns
+              ⇒   Minimum Clock Period      :   1760 ps
               ⇒   Maximum Clock Frequency   :   568.18 MHz
               ⇒   Core Utilization          :   45%
               ⇒   Design Area               :   2490 u^2
@@ -150,3 +150,27 @@ As the OpenROAD tool itself iterate the design routing unless all DRC violations
 ![image](https://user-images.githubusercontent.com/100372947/228317683-f4211932-5c46-4728-b044-ddfee0050a98.png)
 
 The biggest achievement of the design is to run the design at maximum operating frequency of 1.17GHz. Along with it, there is a slight improvement in design area along with core utilization. Due to trade off, we see the enhancement in power which can be reduced by further modifications.
+
+The final modified design constraints are given as follows :
+
+              ⇒   Minimum Clock Period      :   850 ps
+              ⇒   Maximum Clock Frequency   :   1.176 GHz
+              ⇒   Core Utilization          :   55%
+              ⇒   Design Area               :   2417 u^2
+              ⇒   Power                     :   32.3 mW
+              
+
+# Acknowledgements
+
+1.	Kunal Ghosh (Co-Founder, VLSI System Design Pvt. Ltd.)
+
+2.	Dr. Hemanta Kumar Mondal (Professor, Dept. of ECE, NIT Durgapur)	
+	
+3.	Sumanto Kar (Sr. Project Technical Assistant, IIT Bombay)
+
+4.  Vijayan Krishnan
+
+
+# References 
+
+OpenROAD Flow Scripts & Documentation : https://openroad.readthedocs.io/en/latest/main/README.html
