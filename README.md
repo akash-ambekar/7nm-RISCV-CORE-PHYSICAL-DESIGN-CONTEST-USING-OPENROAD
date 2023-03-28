@@ -69,3 +69,6 @@ As clock period is proportional to 1/fmax, reducing the clock frequency will res
 
 ![image](https://user-images.githubusercontent.com/100372947/228129497-7155a193-8138-4710-934a-1cd5939894ea.png)
 
+# 2) Improving Core Utilization
+
+Core utilization indicates the amount of core area used for cell placement. While improving the core utilization we have taken care that, core utilization mus
