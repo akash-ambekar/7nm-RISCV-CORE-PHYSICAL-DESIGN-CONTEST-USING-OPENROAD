@@ -135,4 +135,12 @@ While doing CTS, the tool periodically insert buffers to avoid degradation of si
 
 # Clock Tree
 
+![Screenshot (87)](https://user-images.githubusercontent.com/100372947/228317757-abf9e95a-1b53-4691-b34e-2dda3e6a61f9.png)
 
+# DRC 
+
+As the OpenROAD tool itself iterate the design routing unless all DRC violations gets removed, the design ensures 0 DRC violations
+
+# Results & Design Achievements
+
+![image](https://user-images.githubusercontent.com/100372947/228317683-f4211932-5c46-4728-b044-ddfee0050a98.png)
