@@ -6,20 +6,10 @@ This repository gives brief review of PPA Improvement by Physical Design of RISC
 # Contents
 
 - [OpenROAD EDA Tool](#openroad-eda-tool)
-- [Proposed Work & Initial Design Constraints](#proposed-work-&-initial-design-constraints)
-- [Reference Circuit Diagram](#reference-circuit-diagram)
-- [Circuit Details](#circuit-details)
-- [Resolution of ADC](#resolution-of-adc)
-- [Proposed Methodology](#proposed-methodology)
-- [EDA Tools Used](#eda-tools-used)
-- [Verilog Code](#verilog-code)
-- [Makerchip](#makerchip)
-- [Creating model of 8:3 Encoder using NgVeri](#creating-model-of-8-3-encoder-using-ngveri)
-- [Schematics](#schematics)
-- [Netlist](#netlist)
-- [Output Waveforms](#output-waveforms)
-- [GAW Waveforms](#gaw-waveforms)
-- [Author](#author)
+- [Proposed Work and Initial Design Constraints](#proposed-work-and-initial-design-constraints)
+- [Proposed Methods to Improve fmax ](#proposed-methods-to-improve-fmax)
+- [Final Layout](#final-layout)
+- [Results and Achievements](#results-and-achievements)
 - [Acknowledgements](#acknowledgements)
 - [References](#references)
 
@@ -67,7 +57,7 @@ ORFS Documentation & Installation Guide : https://openroad.readthedocs.io/en/lat
 
 
 
-# Proposed Work & Initial Design Constraints
+# Proposed Work and Initial Design Constraints
 
 In this contest, we have provided with a verilog code for RISC-V processor core (Code Link : https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/tree/master/flow/designs/src/ibex) and we are expected to run the RTLtoGDSII flow for given design and improve the PPA with respect to any one parameter. Considering the code, we have decided to improve the performance of the design by improving fmax of design.
 
@@ -164,7 +154,7 @@ While doing CTS, the tool periodically insert buffers to avoid degradation of si
 
 As the OpenROAD tool itself iterate the design routing unless all DRC violations gets removed, the design ensures 0 DRC violations
 
-# Results & Design Achievements
+# Results and Achievements
 
 ![image](https://user-images.githubusercontent.com/100372947/228320811-a0426bab-5ec5-4051-8ce8-c03e8b342289.png)
 
