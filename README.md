@@ -160,6 +160,9 @@ As the OpenROAD tool itself iterate the design routing unless all DRC violations
 
 ![image](https://user-images.githubusercontent.com/100372947/228317683-f4211932-5c46-4728-b044-ddfee0050a98.png)
 
+![image](https://user-images.githubusercontent.com/100372947/228423203-2a56fca8-8947-49eb-b1e1-98de22cfd472.png)
+
+
 The biggest achievement of the design is to run the design at maximum operating frequency of 1.17GHz. Along with it, there is a slight improvement in design area along with core utilization. Due to trade off, we see the enhancement in power which can be reduced by further modifications.
 
 The final modified design constraints are given as follows :
