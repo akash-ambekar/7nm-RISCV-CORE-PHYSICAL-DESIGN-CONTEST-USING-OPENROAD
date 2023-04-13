@@ -68,7 +68,7 @@ The initial design constraints are given as follows :
               ⇒   Maximum Clock Frequency   :   568.18 MHz
               ⇒   Core Utilization          :   45%
               ⇒   Design Area               :   2490 u^2
-              ⇒   Power                     :   12.1 mW
+              ⇒   Power                     :   24.2 mW
               
               
               
